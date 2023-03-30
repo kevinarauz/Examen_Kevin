@@ -37,3 +37,12 @@
 #docker run -p 8080:8080 swagger_server
 
 #docker image ls
+
+#Docker Compose
+#docker compose down
+#docker compose up -d --build
+#docker restart backend-service
+
+#docker exec -ti database-service /bin/bash
+
+#mysql -u root -proot123
