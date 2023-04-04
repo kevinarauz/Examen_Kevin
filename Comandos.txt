@@ -43,6 +43,15 @@
 #docker compose up -d --build
 #docker restart backend-service
 
+#Conexion MySQL
 #docker exec -ti database-service /bin/bash
-
 #mysql -u root -proot123
+#show databases;
+#use dbglobalhitss;
+#show tables;
+#select * from institution;
+
+#Buscar la aplicacion en puerto
+#netstat -ano | findstr :3700
+#Cierra la aplicacion que ocupa dicho puerto
+#taskkill /PID 4380 /F
