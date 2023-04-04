@@ -51,12 +51,14 @@ class InstitutionUseCase:
                 address=institution.address,
                 created_user=institution.created_user,
                 created_at=institution.created_at,
-                status=institution.status
+                status=institution.status,
+                updated_at=institution.updated_at,
+                updated_user=institution.updated_user
             )
             logging.info(f"Update Exitoso: {data_response}")
             response = ResponseInstitution(
-                code=200,
-                message="proceso exitoso",
+                code=0,
+                message="proceso satisfactorio",
                 data=data_response
             )
         else:

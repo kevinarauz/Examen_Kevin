@@ -21,13 +21,15 @@ class InstitutionRepository:
             row = result.fetchone()
             if row is not None:
                 institution = Institution(
+                    address=row['address'],
+                    created_at=row['created_at'],
+                    created_user=row['created_user'],
+                    description=row['description'],
                     id=row['id'],
                     name=row['name'],
-                    description=row['description'],
-                    address=row['address'],
-                    created_user=row['created_user'],
-                    created_at=row['created_at'],
-                    status=row['status']
+                    status=row['status'],
+                    updated_at=row['updated_at'],
+                    updated_user=row['updated_user']
                 )
                 return institution
             else:
